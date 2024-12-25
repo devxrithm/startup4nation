@@ -8,6 +8,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { IoCallOutline } from "react-icons/io5";
 import Navbar from "./navbar";
 import Tooltip from "./tooltip";
+import Link from "next/link";
 
 export default async function Hero() {
     return (
@@ -63,10 +64,12 @@ export default async function Hero() {
                             <IoCallOutline className="text-white text-xl " />
                             Contact Us
                         </button>
+                        <Link href={"https://chat.whatsapp.com/I91UIo8HTzZIab2aXlNYBJ"}>
                         <button className="px-4 py-2 text-black backdrop-blur-sm border border-black rounded-md hover:shadow-[0px_0px_4px_4px_rgba(0,0,0,0.1)] bg-white text-sm transition duration-200 font-semibold flex items-center justify-center gap-1">
                             <FaWhatsapp className="text-green-500 text-xl font-extrabold" />
                             Join Community
                         </button>
+                        </Link>
                     </div>
 <Tooltip/>
                 </div>

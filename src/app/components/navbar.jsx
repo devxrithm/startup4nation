@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Navbar = () => {
@@ -10,7 +11,7 @@ const Navbar = () => {
           <li>Past Events</li>
           <li>Sponsors</li>
           <li>Join Community</li>
-          <li>Contact Us</li>
+          <Link href={"https://chat.whatsapp.com/I91UIo8HTzZIab2aXlNYBJ"}>  <li>Contact Us</li></Link>
         </ul>
       </nav>
     </div>
