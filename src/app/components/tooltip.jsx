@@ -49,7 +49,7 @@ const people = [
 export default function Tooltip() {
   return (
     (
-      <div className="flex flex-row items-center justify-center mt-14 w-full">
+      <div className="flex flex-row items-center justify-center w-full">
         <AnimatedTooltip items={people} />
       </div>
     )

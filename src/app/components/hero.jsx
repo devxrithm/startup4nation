@@ -13,8 +13,8 @@ import Link from "next/link";
 export default async function Hero() {
     return (
         <>
-        <Navbar/>
-            <div className="relative min-h-[25rem] pt-36">
+            <Navbar />
+            <div className="relative max-h-[20rem] pt-32">
 
                 <AnimatedGridPattern
                     numSquares={10}
@@ -41,7 +41,9 @@ export default async function Hero() {
                         </div>
                     </div>
 
-                    <div className="flex justify-center items-center gap-3 -mt-9">
+                    <Tooltip />
+
+                    <div className="flex justify-center items-center gap-3 -mt-2">
                         <Image
                             src={"/logo.png"}
                             width={130}
@@ -53,25 +55,26 @@ export default async function Hero() {
                         </p>
                     </div>
 
-                    <div className="-mt-10">
-                        <h1 className="text-4xl md:text-4xl lg:text-2xl font-semibold max-w-7xl mx-auto text-center relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
+                    <div className="">
+                        <h1 className="text-4xl md:text-4xl lg:text-2xl font-semibold max-w-7xl mx-auto text-center relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
                             WHERE CRAZY BECOME <Cover>CREATIVE</Cover>
                         </h1>
                     </div>
 
-                    <div className="absolute flex justify-center items-center gap-3 mt-32">
-                        <button className="px-8 py-2  bg-black text-white text-sm rounded-md font-semibold hover:bg-black/[0.8] hover:shadow-lg flex items-center justify-center gap-1">
+                    <div className=" flex justify-center items-center gap-3 mt-5">
+
+                        <button className="px-4 py-2 text-white backdrop-blur-sm border border-black rounded-md hover:shadow-[0px_0px_4px_4px_rgba(0,0,0,0.1)] bg-black text-sm transition duration-200 font-semibold flex items-center justify-center gap-2">
                             <IoCallOutline className="text-white text-xl " />
                             Contact Us
                         </button>
+
                         <Link href={"https://chat.whatsapp.com/I91UIo8HTzZIab2aXlNYBJ"}>
-                        <button className="px-4 py-2 text-black backdrop-blur-sm border border-black rounded-md hover:shadow-[0px_0px_4px_4px_rgba(0,0,0,0.1)] bg-white text-sm transition duration-200 font-semibold flex items-center justify-center gap-1">
-                            <FaWhatsapp className="text-green-500 text-xl font-extrabold" />
-                            Join Community
-                        </button>
+                            <button className="px-4 py-2 text-black backdrop-blur-sm border border-black rounded-md hover:shadow-[0px_0px_4px_4px_rgba(0,0,0,0.1)] bg-white text-sm transition duration-200 font-semibold flex items-center justify-center gap-1">
+                                <FaWhatsapp className="text-green-500 text-xl font-extrabold" />
+                                Join Community
+                            </button>
                         </Link>
                     </div>
-<Tooltip/>
                 </div>
             </div>
 
